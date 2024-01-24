@@ -15,11 +15,11 @@ const Intro = () => {
                 id="parallax"
             ></div>
             <img
-                src={cloud}
+                src={cloud} alt="cloud"
                 className="cloud"
             />
             <img
-                src={cloudSoft}
+                src={cloudSoft} alt="cloud"
                 className="cloud-soft"
             />
             <div className="content">

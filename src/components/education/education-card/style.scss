@@ -1,0 +1,64 @@
+@import "../../../style-config/mixins.scss",
+  "../../../style-config/variable.scss";
+.education-card {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border-radius: 16px;
+  overflow: hidden;
+  cursor: pointer;
+  margin-bottom: 20px;
+  @include small-screen {
+    width: calc(100% / 3);
+    margin-right: 20px;
+    // margin-bottom: 0;
+  }
+  .content-section {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    position: relative;
+    flex-grow: 1;
+    background: $black-lighter;
+    @include transition-ease;
+
+    .info-bar {
+      p {
+        color: $yellow;
+        @include typography(22px, 500, 20px);
+      }
+    }
+    h3 {
+      color: $white;
+      margin: 20px 0;
+      @include ellipsis;
+    }
+    p {
+      color: whitesmoke;
+      @include ellipsis;
+    }
+
+    .info-marks {
+      padding-top: 20px;
+      p {
+        color: $yellow;
+        @include typography(18px, 400, 18px);
+        @include small-screen {
+            @include typography(22px, 500, 20px);
+        }
+      }
+    }
+  }
+
+  &:hover {
+    @include small-screen {
+      .content-section {
+        background-color: #ffffff;
+        h3,
+        p {
+          color: $black-light;
+        }
+      }
+    }
+  }
+}

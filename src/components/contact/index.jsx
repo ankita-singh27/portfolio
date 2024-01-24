@@ -12,7 +12,7 @@ const Contact = () => {
             id="contact"
             title="Contact"
             colorTitle="Me"
-            background="dark"
+            background="light"
         >
             <div className="contact-content-wrapper">
                 <ContactInfo />

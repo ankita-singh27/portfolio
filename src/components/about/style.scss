@@ -2,7 +2,6 @@
 
 .about-content-wrapper {
     display: flex;
-    align-items: center;
     flex-direction: column;
     margin-top: 25px;
     @include small-screen {
@@ -10,17 +9,45 @@
         margin-top: 75px;
     }
     .left-col {
-        width: 75%;
-        display: flex;
-        align-items: center;
-        justify-content: flex-start;
+        width: 100%;
         @include small-screen {
             width: 40%;
         }
-        img {
-            width: 100%;
-            max-width: 453px;
-            display: block;
+
+        .highlights {
+            border-radius: 6px;
+            padding: 20px;
+            margin-bottom: 20px;
+            @include glassmorphism-effect;
+            h3{
+                text-align: center;
+                @include typography(20px, 500, 24px);
+                margin-bottom:10px;
+                @include small-screen {
+                 @include typography(24px, 500, 24px); 
+                }
+            }
+            .horizontal {
+                display: flex;
+                align-items: center;
+            }
+            .icon{
+                width: 55px;
+                height: 55px;
+                min-width: 55px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background-color: $yellow;
+                font-size: 24px;
+                color:$black-light;
+            }
+            .text {
+                padding-left: 10px;
+                @include typography(18px, 500, 24px);
+                color: $black-light;
+            }    
         }
     }
     .right-col {
@@ -48,4 +75,8 @@
             }
         }
     }
+}
+
+.job-ticker-section{
+    width:100%;
 }
