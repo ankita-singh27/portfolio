@@ -1,38 +1,46 @@
 import React from "react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { GrAchievement } from "react-icons/gr";
-import { FaAward } from "react-icons/fa";
+import { FaAward,FaExternalLinkAlt} from "react-icons/fa";
+import certificate from "../../download/Web_Development_Cerificate.pdf";
 
 import CallToAction from "../shared/CallToAction";
 import Section from "../shared/section";
-import { JobsTicker } from "./job-ticker";
+
 //import Resume from "../../download/file-sample_150kB.pdf";
 
 import "./style.scss";
 
 const About = () => {
   return (
-    <Section background="light" id="about" title="About" colorTitle="Me">
+    <Section background="dark" id="about" title="About" colorTitle="Me">
       <div className="about-content-wrapper">
         <div className="left-col">
           <div className="highlights">
-          <h3>Achievements</h3>
-          <div className="horizontal">
-            <div className="icon">{<GrAchievement/>}</div>
-            <div className="text">
-            Created 3 Construct Week winning projects in college.</div>
-          </div>
+            <h3>Achievements</h3>
+            <div className="horizontal">
+              <div className="icon">{<GrAchievement />}</div>
+              <div className="text">
+                {/* Created 2 Construct Week winning projects in college. */}
+                Completed <span>150+</span> Hours Coding And  <span>10+</span> Projects.
+              </div>
+            </div>
           </div>
 
           <div className="highlights">
-          <h3>Certification</h3>
-          <div className="horizontal">
-            <div className="icon">{<FaAward/>}</div>
-            <div className="text">
-            Completed Full Stack Web Developer Course.</div>
-          </div>
-          </div>
+            <h3>Certification</h3>
+            <div className="horizontal">
+              <div className="icon">{<FaAward />}</div>
+              <div className="text">
+                Completed Full Stack Web Development Course.
+                <span> <FaExternalLinkAlt 
+                    onClick={() => window.open(certificate)}
+                    />
+                    </span>
+              </div>
 
+            </div>
+          </div>
         </div>
 
         <div className="right-col">
@@ -55,11 +63,7 @@ const About = () => {
         </div>
       </div>
 
-      <div className="job-ticker-section"> <JobsTicker/> </div>
-      
     </Section>
-
-    
   );
 };
 

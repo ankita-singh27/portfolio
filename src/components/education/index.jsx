@@ -7,7 +7,7 @@ import Section from "../shared/section";
 const Education = () => {
   return (
     <div>
-      <Section background="dark" colorTitle="Education">
+      <Section background="light" colorTitle="Education">
         <div className="education-content-wrapper">
           <EducationCard
             duration="May2023-Dec2023"

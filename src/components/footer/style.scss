@@ -16,6 +16,7 @@
         list-style-type: none;
         display: flex;
         align-items: center;
+        // position: relative;
         //margin-top: 30px;
         .footer-menu-item {
             @include typography(14px, 400, 20px);
@@ -55,6 +56,7 @@
                 box-shadow: 0 0 10px rgb(220,252,55), 0 0 40px rgb(220,252,55), 0 0 10px rgb(220,252,55); 
             }
         }
+
     }
     .bottom-bar {
         width: 100%;
