@@ -16,7 +16,7 @@ const IntroContent = () => {
         <div className="left-col">
           <h1 className="title">
             <span className="small-text">
-              <span className="text">Hi</span>
+              <span className="text">Hello</span>
               <span className="icon">
                 <img src={hand} alt="" />
               </span>

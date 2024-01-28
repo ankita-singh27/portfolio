@@ -1,7 +1,8 @@
 import React from "react";
+import certificate from "../../../download/Web_Development_Cerificate.pdf";
 import "./style.scss";
 
-const EducationCard = ({duration, title, description ,marks}) => {
+const EducationCard = ({duration, title, description ,marks,icon}) => {
     return (
         <div className="education-card">
             
@@ -14,7 +15,9 @@ const EducationCard = ({duration, title, description ,marks}) => {
                 <p>{description}</p>
 
                 <div className="info-marks">
-                <p>{marks}</p>
+                <p>{marks}
+                {icon && <span onClick={() => window.open(certificate)}> {icon} </span>}
+                </p>
                 </div>
             </div>
         </div>

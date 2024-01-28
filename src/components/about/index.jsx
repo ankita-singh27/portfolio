@@ -1,15 +1,14 @@
 import React from "react";
 import { AiOutlineCloudDownload } from "react-icons/ai";
 import { GrAchievement } from "react-icons/gr";
-import { FaAward,FaExternalLinkAlt} from "react-icons/fa";
+import { FaAward, FaExternalLinkAlt } from "react-icons/fa";
 import certificate from "../../download/Web_Development_Cerificate.pdf";
 
 import CallToAction from "../shared/CallToAction";
 import Section from "../shared/section";
 
-//import Resume from "../../download/file-sample_150kB.pdf";
-
 import "./style.scss";
+import { JobsTicker } from "./job-ticker";
 
 const About = () => {
   return (
@@ -21,8 +20,8 @@ const About = () => {
             <div className="horizontal">
               <div className="icon">{<GrAchievement />}</div>
               <div className="text">
-                {/* Created 2 Construct Week winning projects in college. */}
-                Completed <span>150+</span> Hours Coding And  <span>10+</span> Projects.
+                Completed <span>150+</span> Hours Coding And <span>10+</span>{" "}
+                Projects.
               </div>
             </div>
           </div>
@@ -33,12 +32,10 @@ const About = () => {
               <div className="icon">{<FaAward />}</div>
               <div className="text">
                 Completed Full Stack Web Development Course.
-                <span> <FaExternalLinkAlt 
-                    onClick={() => window.open(certificate)}
-                    />
-                    </span>
+                <span>
+                  <FaExternalLinkAlt onClick={() => window.open(certificate)} />
+                </span>
               </div>
-
             </div>
           </div>
         </div>
@@ -62,7 +59,7 @@ const About = () => {
           />
         </div>
       </div>
-
+      <JobsTicker />
     </Section>
   );
 };

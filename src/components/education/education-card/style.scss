@@ -6,7 +6,6 @@
   width: 100%;
   border-radius: 16px;
   overflow: hidden;
-  cursor: pointer;
   margin-bottom: 20px;
   @include small-screen {
     width: calc(100% / 3);
@@ -17,7 +16,7 @@
     display: flex;
     flex-direction: column;
     padding: 30px;
-    position: relative;
+    // position: relative;
     flex-grow: 1;
     background: $black-lighter;
     @include transition-ease;
@@ -45,6 +44,15 @@
         @include typography(18px, 400, 18px);
         @include small-screen {
             @include typography(22px, 500, 20px);
+        }
+        span{
+          svg{
+           width:27px;
+          height: 27px;
+          padding-top:8px;
+          cursor:pointer;
+
+          }
         }
       }
     }

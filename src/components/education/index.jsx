@@ -1,5 +1,6 @@
 import React from "react";
 import EducationCard from "./education-card";
+import { FaLink } from "react-icons/fa6";
 
 import "./style.scss";
 import Section from "../shared/section";
@@ -7,13 +8,14 @@ import Section from "../shared/section";
 const Education = () => {
   return (
     <div>
-      <Section background="light" colorTitle="Education">
+      <Section background="light" title="Education">
         <div className="education-content-wrapper">
           <EducationCard
             duration="May2023-Dec2023"
             title="Full Stack Web Development (MERN)"
             description="Odin School"
             marks="Certificate"
+            icon={<FaLink />}
           />
           <EducationCard
             duration="2018-2020"

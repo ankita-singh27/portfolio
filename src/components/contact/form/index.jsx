@@ -5,9 +5,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import "./style.scss";
-// service_hyas25j
-// template_pm5k0yr
-// p8Pc2IcSajG4L54Hf
 
 const Form = () => {
     const {
@@ -18,10 +15,10 @@ const Form = () => {
 
     const onSubmit = (data) => {
         send(
-            "service_xppqhjd", // Service ID
-            "template_eyrpzyn", // Template ID
+            "service_hyas25j", // Service ID
+            "template_5cjkvui", // Template ID
             data,
-            "_0RSmg5VJvbjNiPyf" // Public Key - https://dashboard.emailjs.com/admin/account
+            "p8Pc2IcSajG4L54Hf" // Public Key - https://dashboard.emailjs.com/admin/account
         )
             .then((response) => {
                 console.log("SUCCESS!", response.status, response.text);
@@ -34,7 +31,7 @@ const Form = () => {
     };
 
     const formSuccess = () => {
-        toast("Mail Successfully Sent! Thanks for submitting your Query!");
+        toast("Mail Successfully Sent! Thanks for submitting your Query.");
         document.getElementById("queryForm").reset();
     };
 
@@ -81,7 +78,7 @@ const Form = () => {
                     <input
                         type="text"
                         name="phone_number"
-                        placeholder="Phone"
+                        placeholder="Phone Number"
                         {...register("phone_number", {
                             required: "Phone number is required",
                             minLength: {

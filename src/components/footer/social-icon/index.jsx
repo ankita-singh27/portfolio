@@ -10,6 +10,7 @@ const SocialIcon = ({ icon, color, link, tooltip }) => {
       }}
     >
       {icon}
+      <div className="tooltips">{tooltip}</div>
     </div>
   );
 };
