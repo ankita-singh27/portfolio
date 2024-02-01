@@ -46,6 +46,8 @@ const About = () => {
             and expertise in website architecture, design, and web development.
             My focus is on crafting robust, functional, and user-centric
             websites having attention to detail and a problem solving mindset.
+            Possesses strong technical expertise in front-end development,
+            coupled with excellent problem-solving and communication skills.
             Quality and solution driven, skilled in and having hands-on
             experience of working with HTML, CSS, JavaScript, React and
             Firebase. Highly resilient and focused on learning new techniques to

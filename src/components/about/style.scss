@@ -78,6 +78,7 @@
         p {
             @include typography(14px, 400, 20px);
             margin-bottom: 15px;
+            letter-spacing: 1px;
             @include small-screen {
                 @include typography(18px, 400, 24px);
             }
@@ -85,7 +86,7 @@
         .call-to-action {
             margin: 0 auto;
             @include small-screen {
-                margin: 30px 0;
+                margin:0;
                 
             }
         }

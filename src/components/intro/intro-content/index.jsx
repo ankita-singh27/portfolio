@@ -25,10 +25,11 @@ const IntroContent = () => {
             <span className="big-text">A Frontend Developer</span>
           </h1>
           <p className="title">
-            Dedicated Frontend developer specializing in building beautiful, functional and
-            user-centric websites with expertise in HTML, CSS, React.js & JavaScript.
-            Experienced in creating user freindly interface websites. Let's turn
-            ideas into captivating digital experiences.
+            Highly skilled and motivated Frontend developer specializing in building beautiful,
+            functional and user-centric websites with HTML, CSS,
+            React.js & JavaScript. Let's turn ideas into captivating digital experiences.
+            {/* Experienced in creating user freindly interface websites. */}
+            
           </p>
           <CallToAction
             text="Hire Me"

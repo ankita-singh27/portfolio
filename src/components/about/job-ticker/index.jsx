@@ -45,7 +45,7 @@ export function JobsTicker() {
 const JOBSTICKER = styled.div`
 display:flex;
 flex-wrap:wrap;
-margin:5px auto;
+margin:8px auto;
   @media screen and (max-width: 768px) {
     flex-direction: column;
     margin-top:30px;
