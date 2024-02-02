@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import Section from "../shared/section";
 import Filters from "./filters";
 import Showcase from "./showcase";
+import { Reveal } from "../shared/Reveal";
 
 const projectsData = [
   {
@@ -112,8 +113,13 @@ const Projects = () => {
   return (
     <Section id="projects" title="My" colorTitle="Projects" background="light">
       <div className="portfolio-content-wrapper" style={{ width: "100%" }}>
+      <Reveal>
         <Filters filterProjects={(tag) => filterProjects(tag)} />
+        </Reveal>
+        
+        <Reveal>
         <Showcase data={projects} transition={transition} />
+        </Reveal>
       </div>
     </Section>
   );

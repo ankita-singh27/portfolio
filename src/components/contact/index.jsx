@@ -5,6 +5,7 @@ import ContactInfo from "./contact-info";
 import Form from "./form";
 
 import "./style.scss";
+import { Reveal } from "../shared/Reveal";
 
 const Contact = () => {
     return (
@@ -14,10 +15,14 @@ const Contact = () => {
             colorTitle="Me"
             background="dark"
         >
+        
             <div className="contact-content-wrapper">
+                <Reveal>
                 <ContactInfo />
+                </Reveal>
                 <Form />
             </div>
+            
         </Section>
     );
 };

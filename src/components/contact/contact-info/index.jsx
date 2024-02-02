@@ -4,10 +4,12 @@ import { IoLocationSharp } from "react-icons/io5";
 import { MdEmail } from "react-icons/md";
 
 import "./style.scss";
+import { Reveal } from "../../shared/Reveal";
 
 const ContactInfo = () => {
   return (
     <div className="contact-info-box">
+    <Reveal>
       <h4>
         <div className="span">Get In Touch </div>
         Feel free to reach out to me for any questions. Got a project ? Reach
@@ -25,6 +27,7 @@ const ContactInfo = () => {
         <MdEmail />
         <span className="text">rajputanki5@gmail.com</span>
       </div>
+      </Reveal>
     </div>
   );
 };

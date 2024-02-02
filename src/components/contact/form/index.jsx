@@ -5,6 +5,7 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 import "./style.scss";
+import { Reveal } from "../../shared/Reveal";
 
 const Form = () => {
     const {
@@ -36,7 +37,9 @@ const Form = () => {
     };
 
     return (
+        
         <div className="query-form">
+        <Reveal delay={1.4}>
             <ToastContainer />
             <form
                 id="queryForm"
@@ -134,6 +137,7 @@ const Form = () => {
 
                 <button type="submit">Submit</button>
             </form>
+            </Reveal>
         </div>
     );
 };

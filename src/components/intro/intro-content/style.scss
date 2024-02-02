@@ -50,9 +50,13 @@
                     }
                 }
                 .big-text {
+                    display: flex;
                     @include typography(42px, 400, 52px);
                     @include small-screen {
                         @include typography(40px, 400, 72px);
+                    }
+                    span{
+                        margin-right:8px;
                     }
                 }
             }

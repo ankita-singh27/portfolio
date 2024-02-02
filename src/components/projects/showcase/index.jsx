@@ -3,6 +3,7 @@ import CallToAction from "../../shared/CallToAction";
 import { FaLink, FaGithub } from "react-icons/fa";
 
 import "./style.scss";
+import { Reveal } from "../../shared/Reveal";
 
 const Showcase = ({ data, transition }) => {
   return (
@@ -18,9 +19,11 @@ const Showcase = ({ data, transition }) => {
           }`}
           key={project.id}
         >
+         <Reveal>
           <div className="image-section">
             <img src={project.media.thumbnail} alt={project.name} />
           </div>
+          </Reveal>
 
           <div className="tech-stack">
           {project.techStack?.map((tech, index) => (

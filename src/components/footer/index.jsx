@@ -8,11 +8,13 @@ import SocialIcon from "./social-icon";
 import { scrollToSection } from "../utils/helpers";
 
 import "./style.scss";
+import { Reveal } from "../shared/Reveal";
 
 const Footer = () => {
   return (
     <Section background="light" className="footer">
       <div className="footer-content-wrapper">
+      <Reveal>
         <ul className="footer-menu-items">
           <li
             className="footer-menu-item"
@@ -39,8 +41,10 @@ const Footer = () => {
             Contact
           </li>
         </ul>
+        </Reveal>
 
         {/* social icons */}
+        <Reveal>
         <div className="social-icons">
           <SocialIcon
             color="#0D2636"
@@ -79,6 +83,7 @@ const Footer = () => {
             &copy; {new Date().getFullYear()} All Rights Reserved. Ankita Singh
           </div>
         </div>
+        </Reveal>
       </div>
     </Section>
   );

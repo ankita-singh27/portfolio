@@ -4,12 +4,15 @@ import { FaLink } from "react-icons/fa6";
 
 import "./style.scss";
 import Section from "../shared/section";
+import { Reveal } from "../shared/Reveal";
 
 const Education = () => {
   return (
-    <div>
+    
       <Section background="light" title="Education">
+      <Reveal>
         <div className="education-content-wrapper">
+    
           <EducationCard
             duration="May2023-Dec2023"
             title="Full Stack Web Development (MERN)"
@@ -30,8 +33,8 @@ const Education = () => {
             marks="Grade: First Division"
           />
         </div>
+        </Reveal>
       </Section>
-    </div>
   );
 };
 

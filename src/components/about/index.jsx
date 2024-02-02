@@ -9,13 +9,17 @@ import Section from "../shared/section";
 
 import "./style.scss";
 import { JobsTicker } from "./job-ticker";
+import { Reveal } from "../shared/Reveal";
 
 const About = () => {
   return (
     <Section background="dark" id="about" title="About" colorTitle="Me">
+
+    <Reveal>
       <div className="about-content-wrapper">
-        <div className="left-col">
+       <div className="left-col">
           <div className="highlights">
+          <Reveal delay={1.6}>
             <h3>Achievements</h3>
             <div className="horizontal">
               <div className="icon">{<GrAchievement />}</div>
@@ -24,9 +28,11 @@ const About = () => {
                 Projects.
               </div>
             </div>
+          </Reveal>
           </div>
 
           <div className="highlights">
+          <Reveal delay={1.8}>
             <h3>Certification</h3>
             <div className="horizontal">
               <div className="icon">{<FaAward />}</div>
@@ -37,10 +43,14 @@ const About = () => {
                 </span>
               </div>
             </div>
+            </Reveal>
           </div>
+        
+       
         </div>
 
         <div className="right-col">
+        <Reveal>
           <p>
             A dedicated frontend developer, I bring passion, lifelong learning,
             and expertise in website architecture, design, and web development.
@@ -59,10 +69,16 @@ const About = () => {
             icon={<AiOutlineCloudDownload />}
             //action={() => window.open(Resume)}
           />
+          </Reveal>
         </div>
+         
       </div>
+      </Reveal>
+      <Reveal delay={2.0}>
       <JobsTicker />
+      </Reveal>
     </Section>
+        
   );
 };
 
