@@ -48,14 +48,4 @@
             width: 100%;
         }
     }
-    .content {
-        width: 100%;
-        padding: 0 20px;
-        position: relative;
-        display: flex;
-        flex-direction: column;
-        @include small-screen {
-            width: 1200px;
-        }
-    }
 }

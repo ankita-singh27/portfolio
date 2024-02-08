@@ -1,87 +1,70 @@
 import React from "react";
-import { FaLink, FaGithub } from "react-icons/fa";
-import { RiArrowRightUpFill } from "react-icons/ri";
+import { MdArrowOutward } from "react-icons/md";
 import Typewriter from "typewriter-effect";
 
-import girl from "../../../images/girl.png";
 import hand from "../../../images/hand.png";
-import CallToAction from "../../shared/CallToAction";
 import { scrollToSection } from "../../utils/helpers";
 
 import "./style.scss";
 import { Reveal } from "../../shared/Reveal";
+import Section from "../../shared/section";
 
 const IntroContent = () => {
   return (
     <Reveal>
-    <div className="intro-content">
-      <div className="layout">
-        <div className="left-col">
-          <h1 className="title">
-          <Reveal delay={1.0}>
-            <span className="small-text">
-              <span className="text">Hi</span>
-              <span className="icon">
-                <img src={hand} alt="" />
-              </span>
-              <span className="text">, I'm Ankita Singh</span>
-            </span>
-            <div className="big-text">
-            <span> A </span>
-             <Typewriter
+    <Section id="home">
+      <div className="home-content-wrapper">
+        <div className="home">
+          <h3> Hi
+              <img src={hand} alt="" />
+              ,<span> I'm </span>
+            </h3>
+
+            <h1> Ankita Singh </h1>
+          
+          <h2>
+              <Typewriter
                 options={{
-                  strings:[ 'Frontend Developer','Programmer', 'Web Developer'],
+                  strings: [
+                    "A Web Developer",
+                    "A Frontend Developer",
+                    "A Programmer",
+                    "A React JS Developer"
+                  ],
                   autoStart: true,
-                  delay: 200,
+                  delay: 300,
                   pauseFor: 500,
                   loop: true,
                 }}
               />
-              
-            </div>
-            </Reveal>
-          </h1>
-          <Reveal delay={1.3}>
-          <p className="title">
+          </h2>
+          <Reveal delay={1}>
+          <div className="intro">
+          <p>
             Highly skilled and motivated Frontend developer specializing in
             building beautiful, functional and user-centric websites with HTML,
-            CSS, React.js & JavaScript. Let's turn ideas into captivating
-            digital experiences.
-            {/* Experienced in creating user freindly interface websites. */}
+            CSS, React.js & JavaScript. Experienced in creating user friendly
+            interface websites. Let's turn ideas into captivating digital
+            experiences.
           </p>
-          <CallToAction
-            text="Hire Me"
-            icon={<RiArrowRightUpFill />}
-            action={() => {
-              scrollToSection("contact");
-            }}
-          />
+          </div>
           </Reveal>
-        </div>
-        <div className="right-col">
-        <Reveal delay={1.6}>
-          <img src={girl} alt="user" />
 
-          <div className="highlights horizontal">
+         <Reveal delay={1.4}>
+          <div
+            className="highlights"
+            onClick={() => scrollToSection("contact")}
+          >
             <div className="icon">
-              <FaGithub />
+              <MdArrowOutward />
             </div>
-            <div className="text">
-              <span>10+</span> Projects
-            </div>
+            <div className="text">Hire Me</div>
           </div>
+          </Reveal>
 
-          <div className="highlights verticle">
-            <div className="icon">
-              <FaLink />
-            </div>
-            <div className="text">Web Developer Cerificate</div>
-          </div>
-        </Reveal>
         </div>
-
       </div>
-    </div>
+    </Section>
     </Reveal>
   );
 };

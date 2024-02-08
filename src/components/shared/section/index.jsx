@@ -8,7 +8,7 @@ const Section = ({ children, id, className, title,colorTitle, background }) => {
         <div
             id={id || ""}
             className={`section ${className ? className : ""} ${
-                background === "dark" ? "dark" : "light"
+                background === "dark" ? "dark": background === "light"? "light" : ""
             }`}
         >
             <div className="content">

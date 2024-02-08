@@ -6,11 +6,13 @@ import Footer from "./components/footer";
 import Intro from "./components/intro";
 import Skills from "./components/skills";
 import Projects from "./components/projects";
+import Navigation from "./components/navigation-bar";
 
 
 function App() {
   return (
     <div>
+    <Navigation/>
       <Intro />
        <About />
       <Education />
