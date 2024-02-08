@@ -6,6 +6,7 @@ import { IoMdDownload } from "react-icons/io";
 
 import CallToAction from "../shared/CallToAction";
 import { scrollToSection } from "../utils/helpers";
+import Resume from "../../download/Ankita-Singh-Resume.pdf";
 
 import "./style.scss";
 
@@ -79,10 +80,10 @@ const Navigation = () => {
           <CallToAction
             text="Resume"
             icon={<IoMdDownload />}
-            // id="resume"
-            // action={() => {
-            //   menuItemClickHandler("contact");
-            // }}
+            download
+            action={() => {
+              window.open(Resume)
+            }}
           />
         </div>
       </div>

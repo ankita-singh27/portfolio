@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.scss";
+//import Resume from "../../../download/Ankita-Singh-Resume.pdf";
 
 const CallToAction = ({ text, action, icon }) => {
     return (

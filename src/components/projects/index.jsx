@@ -17,7 +17,7 @@ const projectsData = [
     description:
       "Movix is a movie website which offers an immersive cinematic experience. It introduces innovative features such as infinite scrolling for seamless content exploration, loading skeleton to enhance user anticipation during data retrieval. With a user-friendly interface and  a vast array of content, this website delivers an engaging platform for film enthusiasts. ",
     github: "https://github.com/ankita-singh27/movix",
-    webapp: "",
+    webapp: "https://movix-movie-website.vercel.app/",
   },
   {
     id: 2,
@@ -42,7 +42,7 @@ const projectsData = [
     techStack: ["React", "JavaScript", "HTML", "Tailwind CSS"],
     description:
       "Quiz Grad is an engaging quiz app, crafted using React for a dynamic and interactive user experience. It challenges users to showcase their knowledge under time constraints. The addition of a sleek loading screen enhances the overall aesthetic. After submission, the app provides instant feedback on marks earned with a pass or fail status.",
-    github: "",
+    github: "https://github.com/ankita-singh27/quiz-app",
     webapp: "",
   },
   {

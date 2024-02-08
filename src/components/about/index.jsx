@@ -3,6 +3,7 @@ import { AiOutlineCloudDownload } from "react-icons/ai";
 import { GrAchievement } from "react-icons/gr";
 import { FaAward, FaExternalLinkAlt } from "react-icons/fa";
 import certificate from "../../download/Web_Development_Cerificate.pdf";
+import Resume from "../../download/Ankita-Singh-Resume.pdf";
 
 import CallToAction from "../shared/CallToAction";
 import Section from "../shared/section";
@@ -67,7 +68,7 @@ const About = () => {
           <CallToAction
             text="Download Resume"
             icon={<AiOutlineCloudDownload />}
-            //action={() => window.open(Resume)}
+            action={() => window.open(Resume)}
           />
           </Reveal>
         </div>
