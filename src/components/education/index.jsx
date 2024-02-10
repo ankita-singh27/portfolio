@@ -1,6 +1,6 @@
 import React from "react";
 import EducationCard from "./education-card";
-import { FaLink } from "react-icons/fa6";
+import { FaExternalLinkAlt } from "react-icons/fa";
 
 import "./style.scss";
 import Section from "../shared/section";
@@ -18,7 +18,7 @@ const Education = () => {
             title="Full Stack Web Development (MERN)"
             description="Odin School"
             marks="Certificate"
-            icon={<FaLink />}
+            icon={<FaExternalLinkAlt />}
           />
           <EducationCard
             duration="2018-2020"

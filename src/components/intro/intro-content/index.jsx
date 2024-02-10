@@ -9,6 +9,7 @@ import "./style.scss";
 import { Reveal } from "../../shared/Reveal";
 import Section from "../../shared/section";
 
+
 const IntroContent = () => {
   return (
     <Reveal>
@@ -43,9 +44,9 @@ const IntroContent = () => {
           <p>
             Highly skilled and motivated Frontend developer specializing in
             building beautiful, functional and user-centric websites with HTML,
-            CSS, React.js & JavaScript. Experienced in creating user friendly
-            interface websites. Let's turn ideas into captivating digital
+            CSS, React.js & JavaScript. Let's turn ideas into captivating digital
             experiences.
+            {/* Experienced in creating user friendly interface websites.  */}
           </p>
           </div>
           </Reveal>

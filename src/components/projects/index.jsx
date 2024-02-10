@@ -13,9 +13,9 @@ const projectsData = [
     media: {
       thumbnail: require("../../images/projects/movix app.png"),
     },
-    techStack: ["React", "Redux", "JavaScript", "HTML", "SASS", "CSS"],
+    techStack: ["React", "Redux Toolkit", "JavaScript", "HTML", "SASS",],
     description:
-      "Movix is a movie website which offers an immersive cinematic experience. It introduces innovative features such as infinite scrolling for seamless content exploration, loading skeleton to enhance user anticipation during data retrieval. With a user-friendly interface and  a vast array of content, this website delivers an engaging platform for film enthusiasts. ",
+      "Movix is a movie website which offers an immersive cinematic experience. It introduces innovative features such as infinite scrolling for seamless content exploration, filtering, searching and skeleton loading to enhance user anticipation during data retrieval. With a user-friendly interface and  a vast array of content, this website delivers an engaging platform for film enthusiasts. ",
     github: "https://github.com/ankita-singh27/movix",
     webapp: "https://movix-movie-website.vercel.app/",
   },
@@ -24,25 +24,25 @@ const projectsData = [
     name: "SHOPPER",
     tags: ["react"],
     media: {
-      thumbnail: require("../../images/projects/shopper app1.png"),
+      thumbnail: require("../../images/projects/shopper app.png"),
     },
-    techStack: ["React", "ContextApi", "HTML", "JavaScript", "CSS"],
+    techStack: ["React","Styled-Components", "ContextApi", "JavaScript",],
     description:
-      "Shopper is an e-commerce website meticulously crafted to provide an immersive online shopping experience. It features advanced functionalities, including product search, category-based filtering, and sorting options for user convenience. With a seamless shopping journey, users can effortlessly add products to their cart and make purchases.",
+      "Shopper is an e-commerce website meticulously crafted to provide an immersive online shopping experience. It features advanced functionalities including product search, category-based filtering, and sorting options for user convenience. With a seamless shopping journey, users can effortlessly add products to their cart and make purchases.",
     github: "https://github.com/ankita-singh27/Shopper",
     webapp: "https://shopper-ecommerce29.netlify.app/",
   },
   {
     id: 3,
-    name: "QUIZ GRAD",
-    tags: ["react"],
+    name: "PORTFOLIO",
+    tags: ["animation","react"],
     media: {
-      thumbnail: require("../../images/projects/quiz grad1.png"),
+      thumbnail: require("../../images/projects/my portfolio.png"),
     },
-    techStack: ["React", "JavaScript", "HTML", "Tailwind CSS"],
+    techStack: ["React", "Framer Motion", "HTML", "SASS", "Email JS"],
     description:
-      "Quiz Grad is an engaging quiz app, crafted using React for a dynamic and interactive user experience. It challenges users to showcase their knowledge under time constraints. The addition of a sleek loading screen enhances the overall aesthetic. After submission, the app provides instant feedback on marks earned with a pass or fail status.",
-    github: "https://github.com/ankita-singh27/quiz-app",
+      "Designed and developed a robust portfolio project using React, leveraging SCSS for a clean and responsive UI. Integrated Framer Motion to enhance the user experience with smooth animations. Implemented a dynamic contact form  with JavaScript and employed email functionality for seamless communication.", 
+    github: "https://github.com/ankita-singh27/portfolio",
     webapp: "",
   },
   {
@@ -73,17 +73,18 @@ const projectsData = [
   },
   {
     id: 6,
-    name: "PORTFOLIO",
-    tags: ["animation"],
+    name: "QUIZ GRAD",
+    tags: ["react"],
     media: {
-      thumbnail: require("../../images/projects/my portfolio.png"),
+      thumbnail: require("../../images/projects/quiz grad1.png"),
     },
-    techStack: ["React", "Framer Motion", "HTML", "SASS", "Email JS"],
+    techStack: ["React", "JavaScript", "HTML", "Tailwind CSS"],
     description:
-      "Designed and developed a robust portfolio project using React, leveraging SCSS for a clean and responsive UI. Integrated Framer Motion to enhance the user experience with smooth animations. Implemented a dynamic contact form  with JavaScript and employed email functionality for seamless communication.", 
-    github: "https://github.com/ankita-singh27/portfolio",
-    webapp: "",
+      "Quiz Grad is an engaging quiz app, crafted using React for a dynamic and interactive user experience. It challenges users to showcase their knowledge under time constraints. The addition of a sleek loading screen enhances the overall aesthetic. After submission, the app provides instant feedback on marks earned with a pass or fail status.",
+    github: "https://github.com/ankita-singh27/quiz-app",
+    webapp: "https://quiz-grad-tau.vercel.app/",
   },
+  
 ];
 
 const Projects = () => {
